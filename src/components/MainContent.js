@@ -1,32 +1,32 @@
 import React from 'react';
-import AFOMContent from './tools/AFOMContent';
-import ArbreProblemeContent from './tools/ArbreProblemeContent';
-import CadreLogiqueContent from './tools/CadreLogiqueContent';
-import DiagrammeGanttContent from './tools/DiagrammeGanttContent';
-import AnalysePartiesContent from './tools/AnalysePartiesContent'; // Corrige cet import
-import AnalyseGenreContent from './tools/AnalyseGenreContent';
-import CarteMentaleContent from './tools/CarteMentaleContent';
-import AnalyseMulticriteresContent from './tools/AnalyseMulticriteresContent';
+import AFOM from './tools/AFOM';
+import ArbreProbleme from './tools/ArbreProbleme';
+import CadreLogique from './tools/CadreLogique';
+import DiagrammeGantt from './tools/DiagrammeGantt';
+import AnalyseParties from './tools/AnalyseParties'; // Corrige cet import
+import AnalyseGenre from './tools/AnalyseGenre';
+import CarteMentale from './tools/CarteMentale';
+import AnalyseMulticriteres from './tools/AnalyseMulticriteres';
 
 const MainContent = ({ selectedTool }) => {
   const renderToolContent = () => {
     switch (selectedTool) {
       case 'afom':
-        return <AFOMContent />;
+        return <AFOM />;
       case 'arbre-problemes':
-        return <ArbreProblemeContent />;
+        return <ArbreProbleme />;
       case 'cadre-logique':
-        return <CadreLogiqueContent />;
+        return <CadreLogique />;
       case 'gantt':
-        return <DiagrammeGanttContent />;
-      case 'parties-prenantes': // Assure-toi d'utiliser l'identifiant correct
-        return <AnalysePartiesContent />;
+        return <DiagrammeGantt/>;
+      case 'parties-prenantes': 
+        return <AnalyseParties />;
       case 'analyse-genre':
-        return <AnalyseGenreContent />;
+        return <AnalyseGenre />;
       case 'carte-mentale':
-        return <CarteMentaleContent />;
+        return <CarteMentale/>;
       case 'analyse-multicriteres':
-        return <AnalyseMulticriteresContent />;
+        return <AnalyseMulticriteres/>;
       default:
         return <p>Sélectionnez un outil pour commencer</p>;
     }
