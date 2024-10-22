@@ -1,42 +1,32 @@
-import React from 'react';
-import AFOM from './tools/AFOM';
-import ArbreProbleme from './tools/ArbreProbleme';
-import CadreLogique from './tools/CadreLogique';
-import DiagrammeGantt from './tools/DiagrammeGantt';
-import AnalyseParties from './tools/AnalyseParties'; // Corrige cet import
-import AnalyseGenre from './tools/AnalyseGenre';
-import CarteMentale from './tools/CarteMentale';
-import AnalyseMulticriteres from './tools/AnalyseMulticriteres';
+import React, { Suspense } from 'react'; 
+import ToolInterface from './ToolInterface';
+import { getToolConfig } from './toolsRegistry/toolRegistry';  // Importe directement getToolConfig
 
 const MainContent = ({ selectedTool }) => {
-  const renderToolContent = () => {
-    switch (selectedTool) {
-      case 'afom':
-        return <AFOM />;
-      case 'arbre-problemes':
-        return <ArbreProbleme />;
-      case 'cadre-logique':
-        return <CadreLogique />;
-      case 'gantt':
-        return <DiagrammeGantt/>;
-      case 'parties-prenantes': 
-        return <AnalyseParties />;
-      case 'analyse-genre':
-        return <AnalyseGenre />;
-      case 'carte-mentale':
-        return <CarteMentale/>;
-      case 'analyse-multicriteres':
-        return <AnalyseMulticriteres/>;
-      default:
-        return <p>Sélectionnez un outil pour commencer</p>;
-    }
-  };
+  if (!selectedTool) {
+    return (
+      <div className="p-8">
+        <h1 className="text-3xl">Sélectionnez un outil pour commencer.</h1>
+      </div>
+    );
+  }
+
+  const toolConfig = getToolConfig(selectedTool); // Récupérer la config de l'outil sélectionné
+
+  if (!toolConfig) {
+    return (
+      <div className="p-8">
+        <h1 className="text-2xl">Outil non trouvé.</h1>
+      </div>
+    );
+  }
 
   return (
-    <div className="flex-1 p-10 bg-white">
-      <h2 className="text-2xl font-semibold">Outil sélectionné : {selectedTool}</h2>
-      {renderToolContent()}
-    </div>
+    <ToolInterface toolId={selectedTool}>
+      <Suspense fallback={<div>Chargement de l'outil...</div>}>
+        {React.createElement(toolConfig.component)} {/* Charger dynamiquement le composant de l'outil */}
+      </Suspense>
+    </ToolInterface>
   );
 };
 

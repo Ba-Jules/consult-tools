@@ -1,13 +1,21 @@
-import React, { Suspense, lazy } from 'react';
-import { loadTool } from '../utils/toolRegistry';
+import React, { Suspense } from 'react';
+import ToolInterface from './ToolInterface';
 
-const ToolWrapper = ({ toolId }) => {
-  const ToolComponent = lazy(() => loadTool(toolId));
+const ToolWrapper = ({ 
+  toolId, 
+  projectName,
+  moderatorName,
+  toolConfig 
+}) => {
+  console.log('ToolWrapper rendu avec:', { toolId, toolConfig });
 
   return (
-    <Suspense fallback={<div>Chargement de l'outil...</div>}>
-      <ToolComponent />
-    </Suspense>
+    <ToolInterface
+      toolId={toolId}
+      toolConfig={toolConfig}
+      projectName={projectName}
+      moderatorName={moderatorName}
+    />
   );
 };
 
