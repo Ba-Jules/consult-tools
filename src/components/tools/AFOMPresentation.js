@@ -1,121 +1,268 @@
 import React, { useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Play, X } from 'lucide-react';
+
+const afomVideoUrl = '/videos/afom-presentation.mp4';
 
 const AFOMPresentation = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  
+  const [showVideo, setShowVideo] = useState(false);
+
   const slides = [
     {
-      title: "Analyse AFOM",
+      title: "Introduction à l'AFOM",
       content: (
-        <div className="space-y-4">
-          <p className="text-lg">
-            L'analyse AFOM est un outil stratégique qui permet d'identifier et d'analyser les :
-          </p>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="p-4 bg-green-50 rounded-lg border border-green-200">
-              <h3 className="font-bold text-green-700">Atouts</h3>
-              <p className="text-green-600">Forces internes de l'organisation</p>
+        <div className="space-y-8">
+          <h3 className="text-3xl font-bold text-blue-800 text-center mb-8">
+            Un outil de diagnostic rapide et stratégique
+          </h3>
+          <div className="grid grid-cols-2 gap-8">
+            <div className="p-6 bg-gradient-to-br from-blue-50 to-white rounded-lg shadow-md">
+              <h4 className="text-xl font-bold text-blue-800 mb-4">Direction Temporelle</h4>
+              <p className="text-gray-700 leading-relaxed">
+                L'analyse AFOM s'articule sur un axe temporel, distinguant clairement le passé (Acquis et Faiblesses) 
+                du futur (Opportunités et Menaces).
+              </p>
             </div>
-            <div className="p-4 bg-red-50 rounded-lg border border-red-200">
-              <h3 className="font-bold text-red-700">Faiblesses</h3>
-              <p className="text-red-600">Points d'amélioration internes</p>
-            </div>
-            <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
-              <h3 className="font-bold text-blue-700">Opportunités</h3>
-              <p className="text-blue-600">Possibilités externes favorables</p>
-            </div>
-            <div className="p-4 bg-yellow-50 rounded-lg border border-yellow-200">
-              <h3 className="font-bold text-yellow-700">Menaces</h3>
-              <p className="text-yellow-600">Risques externes à considérer</p>
+            <div className="p-6 bg-gradient-to-br from-blue-50 to-white rounded-lg shadow-md">
+              <h4 className="text-xl font-bold text-blue-800 mb-4">Dimension Stratégique</h4>
+              <p className="text-gray-700 leading-relaxed">
+                Une distinction nette entre les éléments internes (sous notre contrôle) et externes 
+                (dans l'environnement du projet).
+              </p>
             </div>
           </div>
         </div>
-      ),
+      )
     },
     {
-      title: "Comment utiliser l'AFOM ?",
+      title: "Structure de l'AFOM",
       content: (
-        <div className="space-y-6">
-          <div className="bg-white p-6 rounded-lg shadow-sm">
-            <h3 className="font-bold text-xl mb-4">Les étapes clés</h3>
-            <ol className="space-y-4">
-              <li className="flex items-start">
-                <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center bg-blue-100 text-blue-700 rounded-full font-bold mr-3">1</span>
-                <p>Identifiez les forces et faiblesses internes de votre organisation</p>
-              </li>
-              <li className="flex items-start">
-                <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center bg-blue-100 text-blue-700 rounded-full font-bold mr-3">2</span>
-                <p>Analysez les opportunités et menaces de l'environnement externe</p>
-              </li>
-              <li className="flex items-start">
-                <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center bg-blue-100 text-blue-700 rounded-full font-bold mr-3">3</span>
-                <p>Établissez des liens entre les facteurs internes et externes</p>
-              </li>
-              <li className="flex items-start">
-                <span className="flex-shrink-0 w-8 h-8 flex items-center justify-center bg-blue-100 text-blue-700 rounded-full font-bold mr-3">4</span>
-                <p>Définissez des stratégies basées sur votre analyse</p>
-              </li>
-            </ol>
+        <div className="relative h-[500px] p-4">
+          {/* Labels des axes */}
+          <div className="absolute top-0 w-full text-center font-bold text-blue-800 bg-blue-50 py-2">
+            Souhaité (positif)
+          </div>
+          <div className="absolute bottom-0 w-full text-center font-bold text-blue-800 bg-blue-50 py-2">
+            Non souhaité (négatif)
+          </div>
+          <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -rotate-90 font-bold text-blue-800 bg-blue-50 px-4 py-2">
+            Interne
+          </div>
+          <div className="absolute right-0 top-1/2 transform -translate-y-1/2 rotate-90 font-bold text-blue-800 bg-blue-50 px-4 py-2">
+            Externe
+          </div>
+
+          {/* Grille AFOM */}
+          <div className="grid grid-cols-2 gap-6 h-full pt-12 pb-12 px-16">
+            {/* Acquis */}
+            <div className="p-4 bg-green-50 rounded-lg border-2 border-green-200 shadow-md">
+              <h4 className="font-bold text-green-800 mb-4">A - Acquis</h4>
+              <ul className="space-y-2 text-gray-700">
+                <li>• Succès et réussites passées</li>
+                <li>• Aspects positifs maîtrisés</li>
+                <li>• Réalisations validées</li>
+                <li>• Points forts internes</li>
+                <li>• Ce qu'on a aimé</li>
+              </ul>
+            </div>
+
+            {/* Opportunités */}
+            <div className="p-4 bg-blue-50 rounded-lg border-2 border-blue-200 shadow-md">
+              <h4 className="font-bold text-blue-800 mb-4">O - Opportunités</h4>
+              <ul className="space-y-2 text-gray-700">
+                <li>• Potentiels à exploiter</li>
+                <li>• Ressources disponibles</li>
+                <li>• Atouts à valoriser</li>
+                <li>• Évolutions positives</li>
+                <li>• Perspectives favorables</li>
+              </ul>
+            </div>
+
+            {/* Faiblesses */}
+            <div className="p-4 bg-orange-50 rounded-lg border-2 border-orange-200 shadow-md">
+              <h4 className="font-bold text-orange-800 mb-4">F - Faiblesses</h4>
+              <ul className="space-y-2 text-gray-700">
+                <li>• Difficultés rencontrées</li>
+                <li>• Échecs à analyser</li>
+                <li>• Points à améliorer</li>
+                <li>• Problèmes identifiés</li>
+                <li>• Ce qu'on n'a pas aimé</li>
+              </ul>
+            </div>
+
+            {/* Menaces */}
+            <div className="p-4 bg-red-50 rounded-lg border-2 border-red-200 shadow-md">
+              <h4 className="font-bold text-red-800 mb-4">M - Menaces</h4>
+              <ul className="space-y-2 text-gray-700">
+                <li>• Risques à anticiper</li>
+                <li>• Obstacles potentiels</li>
+                <li>• Contraintes externes</li>
+                <li>• Impacts négatifs possibles</li>
+                <li>• Facteurs défavorables</li>
+              </ul>
+            </div>
           </div>
         </div>
-      ),
+      )
+    },
+{
+      title: "Dimension Temporelle",
+      content: (
+        <div className="space-y-8">
+          <div className="grid grid-cols-2 gap-12">
+            <div className="p-8 bg-gradient-to-r from-gray-50 to-white rounded-lg shadow-lg">
+              <h4 className="text-2xl font-bold text-gray-800 mb-6">Passé</h4>
+              <div className="space-y-6">
+                <div className="p-4 bg-white rounded-lg border border-gray-200 shadow-sm">
+                  <h5 className="font-bold text-green-800 mb-2">Acquis</h5>
+                  <p className="text-gray-700">Réalisations internes positives et succès démontrés</p>
+                </div>
+                <div className="p-4 bg-white rounded-lg border border-gray-200 shadow-sm">
+                  <h5 className="font-bold text-orange-800 mb-2">Faiblesses</h5>
+                  <p className="text-gray-700">Difficultés rencontrées et aspects à améliorer</p>
+                </div>
+              </div>
+            </div>
+            <div className="p-8 bg-gradient-to-r from-gray-50 to-white rounded-lg shadow-lg">
+              <h4 className="text-2xl font-bold text-gray-800 mb-6">Futur</h4>
+              <div className="space-y-6">
+                <div className="p-4 bg-white rounded-lg border border-gray-200 shadow-sm">
+                  <h5 className="font-bold text-blue-800 mb-2">Opportunités</h5>
+                  <p className="text-gray-700">Potentialités et ressources à exploiter</p>
+                </div>
+                <div className="p-4 bg-white rounded-lg border border-gray-200 shadow-sm">
+                  <h5 className="font-bold text-red-800 mb-2">Menaces</h5>
+                  <p className="text-gray-700">Risques et obstacles à anticiper</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )
     },
     {
-      title: "Bonnes pratiques",
+      title: "Responsabilité et Contrôle",
       content: (
-        <div className="space-y-4">
-          <ul className="space-y-3">
-            <li className="bg-green-50 p-4 rounded-lg flex items-start">
-              <div className="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white mr-3">✓</div>
-              <p>Soyez spécifique et concret dans vos descriptions</p>
-            </li>
-            <li className="bg-green-50 p-4 rounded-lg flex items-start">
-              <div className="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white mr-3">✓</div>
-              <p>Basez-vous sur des faits et des données vérifiables</p>
-            </li>
-            <li className="bg-green-50 p-4 rounded-lg flex items-start">
-              <div className="flex-shrink-0 w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white mr-3">✓</div>
-              <p>Impliquez les parties prenantes clés dans l'analyse</p>
-            </li>
-          </ul>
+        <div className="space-y-8">
+          <div className="grid grid-cols-2 gap-12">
+            <div className="p-8 bg-gradient-to-br from-blue-50 to-white rounded-lg shadow-lg">
+              <h4 className="text-2xl font-bold text-blue-800 mb-6">Interne</h4>
+              <div className="space-y-4">
+                <p className="text-gray-700 leading-relaxed">
+                  Les éléments internes relèvent de la responsabilité directe des gestionnaires du projet.
+                  Ils représentent les aspects sur lesquels nous avons un contrôle direct.
+                </p>
+                <div className="mt-4 p-4 bg-white rounded-lg border border-blue-200">
+                  <ul className="space-y-2 text-gray-700">
+                    <li>• Gestion des acquis</li>
+                    <li>• Traitement des faiblesses</li>
+                    <li>• Actions correctives</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div className="p-8 bg-gradient-to-br from-blue-50 to-white rounded-lg shadow-lg">
+              <h4 className="text-2xl font-bold text-blue-800 mb-6">Externe</h4>
+              <div className="space-y-4">
+                <p className="text-gray-700 leading-relaxed">
+                  Les éléments externes sont présents dans l'environnement du projet mais échappent 
+                  à notre contrôle direct. Ils nécessitent une approche adaptative.
+                </p>
+                <div className="mt-4 p-4 bg-white rounded-lg border border-blue-200">
+                  <ul className="space-y-2 text-gray-700">
+                    <li>• Saisie des opportunités</li>
+                    <li>• Gestion des menaces</li>
+                    <li>• Stratégies d'adaptation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      ),
-    },
+      )
+    }
   ];
 
   return (
-    <div className="h-full flex flex-col bg-gray-50">
-      <div className="flex-grow p-8">
-        <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8">
-          <h2 className="text-3xl font-bold mb-8 text-gray-800">{slides[currentSlide].title}</h2>
-          {slides[currentSlide].content}
+    <div className="max-w-6xl mx-auto p-8">
+      <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
+        <div className="p-8">
+          {/* En-tête avec titre et bouton vidéo */}
+          <div className="flex justify-between items-center mb-12">
+            <h2 className="text-4xl font-bold text-gray-900">
+              {slides[currentSlide].title}
+            </h2>
+            <button
+              className="inline-flex items-center px-6 py-3 border border-blue-300 rounded-lg text-sm font-medium text-blue-700 bg-white hover:bg-blue-50 transition-colors duration-200"
+              onClick={() => setShowVideo(true)}
+            >
+              <Play className="w-5 h-5 mr-2" />
+              Voir la vidéo explicative
+            </button>
+          </div>
+
+          {/* Contenu du slide avec animation */}
+          <div className="min-h-[500px] relative">
+            <div className="transform transition-all duration-500 ease-in-out">
+              {slides[currentSlide].content}
+            </div>
+          </div>
+
+          {/* Navigation */}
+          <div className="flex justify-between items-center mt-12">
+            <button
+              className="inline-flex items-center px-6 py-3 border border-gray-300 rounded-lg text-sm font-medium bg-white disabled:text-gray-400 disabled:cursor-not-allowed enabled:text-gray-700 enabled:hover:bg-gray-50 transition-colors duration-200"
+              onClick={() => setCurrentSlide(current => current - 1)}
+              disabled={currentSlide === 0}
+            >
+              <ChevronLeft className="w-5 h-5 mr-2" />
+              Précédent
+            </button>
+
+            <span className="text-sm font-medium text-gray-500">
+              {currentSlide + 1} / {slides.length}
+            </span>
+
+            <button
+              className="inline-flex items-center px-6 py-3 border border-gray-300 rounded-lg text-sm font-medium bg-white disabled:text-gray-400 disabled:cursor-not-allowed enabled:text-gray-700 enabled:hover:bg-gray-50 transition-colors duration-200"
+              onClick={() => setCurrentSlide(current => current + 1)}
+              disabled={currentSlide === slides.length - 1}
+            >
+              Suivant
+              <ChevronRight className="w-5 h-5 ml-2" />
+            </button>
+          </div>
         </div>
       </div>
-      
-      <div className="flex justify-between items-center p-4 bg-white border-t">
-        <button
-          className="px-4 py-2 flex items-center text-gray-700 hover:text-gray-900 disabled:opacity-50"
-          onClick={() => setCurrentSlide(prev => Math.max(0, prev - 1))}
-          disabled={currentSlide === 0}
-        >
-          <ChevronLeft className="mr-2" />
-          Précédent
-        </button>
-        
-        <span className="text-sm text-gray-500">
-          {currentSlide + 1} / {slides.length}
-        </span>
-        
-        <button
-          className="px-4 py-2 flex items-center text-gray-700 hover:text-gray-900 disabled:opacity-50"
-          onClick={() => setCurrentSlide(prev => Math.min(slides.length - 1, prev + 1))}
-          disabled={currentSlide === slides.length - 1}
-        >
-          Suivant
-          <ChevronRight className="ml-2" />
-        </button>
-      </div>
+
+      {/* Modal Vidéo avec z-index élevé pour le bouton de fermeture */}
+      {showVideo && (
+        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50">
+          <div className="bg-white rounded-xl overflow-hidden w-full max-w-4xl relative">
+            <button
+              className="absolute top-4 right-4 z-[60] p-2 bg-white rounded-full hover:bg-gray-100 transition-colors duration-200 shadow-lg"
+              onClick={() => setShowVideo(false)}
+            >
+              <X className="w-6 h-6 text-gray-500" />
+            </button>
+            <div className="p-6">
+              <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden">
+                <video
+                  className="w-full h-full"
+                  controls
+                  autoPlay
+                >
+                  <source src={afomVideoUrl} type="video/mp4" />
+                  Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+              </div>
+              <div className="mt-4 text-sm text-gray-500 text-center">
+                Présentation détaillée de l'outil AFOM
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
