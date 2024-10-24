@@ -181,7 +181,7 @@ const AFOM = ({ sessionConfig }) => {
           ))}
         </div>
 
-        {/* Les 4 boutons d'action */}
+        {/* Les 4 boutons d'action uniquement */}
         <div className="flex justify-center gap-4 p-4">
           <button 
             className="flex items-center gap-2 px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700"
@@ -194,7 +194,7 @@ const AFOM = ({ sessionConfig }) => {
             onClick={() => setShowParticipants(!showParticipants)}
           >
             <Users size={16} />
-            {showParticipants ? 'Masquer' : 'Afficher'} participants
+            Masquer participants
           </button>
           <button 
             className="flex items-center gap-2 px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700"
@@ -212,7 +212,6 @@ const AFOM = ({ sessionConfig }) => {
         </div>
       </div>
 
-      {/* Section des participants */}
       {showParticipants && (
         <div className="w-64 border-l border-gray-200 p-4">
           <h3 className="font-bold text-gray-900 mb-4">Participants</h3>
