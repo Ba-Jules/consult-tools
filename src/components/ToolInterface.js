@@ -1,5 +1,5 @@
 import React, { useState, Suspense } from 'react';
-import { Play, Presentation, MessageSquare, Save, Settings, HelpCircle, ArrowLeftCircle } from 'lucide-react';
+import { Play, Presentation, ArrowLeftCircle } from 'lucide-react';
 import Header from './Header';
 import { getToolConfig } from './toolsRegistry/toolRegistry';  // Récupère la config de l'outil à afficher
 
@@ -113,33 +113,6 @@ const ToolInterface = ({
         <div className="flex-1 flex">
           <div className="flex-1 bg-white p-4 border-r overflow-auto">
             <ToolComponent />
-          </div>
-          <div className="w-64 bg-gray-50 p-4 overflow-auto">
-            <h3 className="text-lg font-semibold mb-4">Participants</h3>
-            <div className="space-y-2">
-              {/* TODO: Liste des participants */}
-            </div>
-          </div>
-        </div>
-
-        <div className="bg-gray-100 border-t p-4">
-          <div className="flex justify-center space-x-4">
-            <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 flex items-center">
-              <MessageSquare size={20} className="mr-2" />
-              Messages
-            </button>
-            <button className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700 flex items-center">
-              <Save size={20} className="mr-2" />
-              Sauvegarder
-            </button>
-            <button className="px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700 flex items-center">
-              <Settings size={20} className="mr-2" />
-              Paramètres
-            </button>
-            <button className="px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700 flex items-center">
-              <HelpCircle size={20} className="mr-2" />
-              Aide
-            </button>
           </div>
         </div>
 

@@ -37,75 +37,82 @@ const AFOMPresentation = () => {
     {
       title: "Structure de l'AFOM",
       content: (
-        <div className="relative h-[500px] p-4">
-          {/* Labels des axes */}
-          <div className="absolute top-0 w-full text-center font-bold text-blue-800 bg-blue-50 py-2">
-            Souhaité (positif)
-          </div>
-          <div className="absolute bottom-0 w-full text-center font-bold text-blue-800 bg-blue-50 py-2">
-            Non souhaité (négatif)
-          </div>
-          <div className="absolute left-0 top-1/2 transform -translate-y-1/2 -rotate-90 font-bold text-blue-800 bg-blue-50 px-4 py-2">
-            Interne
-          </div>
-          <div className="absolute right-0 top-1/2 transform -translate-y-1/2 rotate-90 font-bold text-blue-800 bg-blue-50 px-4 py-2">
-            Externe
-          </div>
-
-          {/* Grille AFOM */}
-          <div className="grid grid-cols-2 gap-6 h-full pt-12 pb-12 px-16">
-            {/* Acquis */}
-            <div className="p-4 bg-green-50 rounded-lg border-2 border-green-200 shadow-md">
-              <h4 className="font-bold text-green-800 mb-4">A - Acquis</h4>
-              <ul className="space-y-2 text-gray-700">
-                <li>• Succès et réussites passées</li>
-                <li>• Aspects positifs maîtrisés</li>
-                <li>• Réalisations validées</li>
-                <li>• Points forts internes</li>
-                <li>• Ce qu'on a aimé</li>
-              </ul>
+        <div className="flex flex-col h-[600px]">
+          {/* Container avec padding pour les étiquettes latérales */}
+          <div className="relative flex-1 flex flex-col mx-16"> {/* Ajout de mx-16 pour l'espace des étiquettes latérales */}
+            {/* Bandeau supérieur */}
+            <div className="text-center font-bold text-blue-800 bg-blue-50 py-2 w-full">
+              Souhaité (positif)
             </div>
 
-            {/* Opportunités */}
-            <div className="p-4 bg-blue-50 rounded-lg border-2 border-blue-200 shadow-md">
-              <h4 className="font-bold text-blue-800 mb-4">O - Opportunités</h4>
-              <ul className="space-y-2 text-gray-700">
-                <li>• Potentiels à exploiter</li>
-                <li>• Ressources disponibles</li>
-                <li>• Atouts à valoriser</li>
-                <li>• Évolutions positives</li>
-                <li>• Perspectives favorables</li>
-              </ul>
+            {/* Labels latéraux */}
+            <div className="absolute left-0 top-1/2 transform -translate-x-16 -translate-y-1/2 -rotate-90 font-bold text-blue-800 bg-blue-50 px-4 py-2 origin-center w-32 text-center">
+              Interne
+            </div>
+            <div className="absolute right-0 top-1/2 transform translate-x-16 -translate-y-1/2 rotate-90 font-bold text-blue-800 bg-blue-50 px-4 py-2 origin-center w-32 text-center">
+              Externe
             </div>
 
-            {/* Faiblesses */}
-            <div className="p-4 bg-orange-50 rounded-lg border-2 border-orange-200 shadow-md">
-              <h4 className="font-bold text-orange-800 mb-4">F - Faiblesses</h4>
-              <ul className="space-y-2 text-gray-700">
-                <li>• Difficultés rencontrées</li>
-                <li>• Échecs à analyser</li>
-                <li>• Points à améliorer</li>
-                <li>• Problèmes identifiés</li>
-                <li>• Ce qu'on n'a pas aimé</li>
-              </ul>
+            {/* Grille AFOM */}
+            <div className="flex-1 grid grid-cols-2 gap-6 p-6">
+              {/* Acquis */}
+              <div className="p-4 bg-green-50 rounded-lg border-2 border-green-200 shadow-md">
+                <h4 className="font-bold text-green-800 mb-4">A - Acquis</h4>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Succès et réussites passées</li>
+                  <li>• Aspects positifs maîtrisés</li>
+                  <li>• Réalisations validées</li>
+                  <li>• Points forts internes</li>
+                  <li>• Ce qu'on a aimé</li>
+                </ul>
+              </div>
+
+              {/* Opportunités */}
+              <div className="p-4 bg-blue-50 rounded-lg border-2 border-blue-200 shadow-md">
+                <h4 className="font-bold text-blue-800 mb-4">O - Opportunités</h4>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Potentiels à exploiter</li>
+                  <li>• Ressources disponibles</li>
+                  <li>• Atouts à valoriser</li>
+                  <li>• Évolutions positives</li>
+                  <li>• Perspectives favorables</li>
+                </ul>
+              </div>
+
+              {/* Faiblesses */}
+              <div className="p-4 bg-orange-50 rounded-lg border-2 border-orange-200 shadow-md">
+                <h4 className="font-bold text-orange-800 mb-4">F - Faiblesses</h4>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Difficultés rencontrées</li>
+                  <li>• Échecs à analyser</li>
+                  <li>• Points à améliorer</li>
+                  <li>• Problèmes identifiés</li>
+                  <li>• Ce qu'on n'a pas aimé</li>
+                </ul>
+              </div>
+
+              {/* Menaces */}
+              <div className="p-4 bg-red-50 rounded-lg border-2 border-red-200 shadow-md">
+                <h4 className="font-bold text-red-800 mb-4">M - Menaces</h4>
+                <ul className="space-y-2 text-gray-700">
+                  <li>• Risques à anticiper</li>
+                  <li>• Obstacles potentiels</li>
+                  <li>• Contraintes externes</li>
+                  <li>• Impacts négatifs possibles</li>
+                  <li>• Facteurs défavorables</li>
+                </ul>
+              </div>
             </div>
 
-            {/* Menaces */}
-            <div className="p-4 bg-red-50 rounded-lg border-2 border-red-200 shadow-md">
-              <h4 className="font-bold text-red-800 mb-4">M - Menaces</h4>
-              <ul className="space-y-2 text-gray-700">
-                <li>• Risques à anticiper</li>
-                <li>• Obstacles potentiels</li>
-                <li>• Contraintes externes</li>
-                <li>• Impacts négatifs possibles</li>
-                <li>• Facteurs défavorables</li>
-              </ul>
+            {/* Bandeau inférieur */}
+            <div className="text-center font-bold text-blue-800 bg-blue-50 py-2 w-full">
+              Non souhaité (négatif)
             </div>
           </div>
         </div>
       )
     },
-{
+    {
       title: "Dimension Temporelle",
       content: (
         <div className="space-y-8">
@@ -202,7 +209,7 @@ const AFOMPresentation = () => {
           </div>
 
           {/* Contenu du slide avec animation */}
-          <div className="min-h-[500px] relative">
+          <div className="min-h-[600px] relative">
             <div className="transform transition-all duration-500 ease-in-out">
               {slides[currentSlide].content}
             </div>
@@ -235,7 +242,7 @@ const AFOMPresentation = () => {
         </div>
       </div>
 
-      {/* Modal Vidéo avec z-index élevé pour le bouton de fermeture */}
+      {/* Modal Vidéo */}
       {showVideo && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50">
           <div className="bg-white rounded-xl overflow-hidden w-full max-w-4xl relative">
