@@ -1,6 +1,6 @@
-import React, { Suspense } from 'react'; 
+import React from 'react';
 import ToolInterface from './ToolInterface';
-import { getToolConfig } from './toolsRegistry/toolRegistry';  // Importe directement getToolConfig
+import { getToolConfig } from './toolsRegistry/toolRegistry';
 
 const MainContent = ({ selectedTool }) => {
   if (!selectedTool) {
@@ -11,7 +11,7 @@ const MainContent = ({ selectedTool }) => {
     );
   }
 
-  const toolConfig = getToolConfig(selectedTool); // Récupérer la config de l'outil sélectionné
+  const toolConfig = getToolConfig(selectedTool);
 
   if (!toolConfig) {
     return (
@@ -21,13 +21,12 @@ const MainContent = ({ selectedTool }) => {
     );
   }
 
-  return (
-    <ToolInterface toolId={selectedTool}>
-      <Suspense fallback={<div>Chargement de l'outil...</div>}>
-        {React.createElement(toolConfig.component)} {/* Charger dynamiquement le composant de l'outil */}
-      </Suspense>
-    </ToolInterface>
-  );
+  // Ne pas passer de children à ToolInterface
+  return <ToolInterface 
+    toolId={selectedTool} 
+    projectName="Mon Projet" 
+    moderatorName="Modérateur"
+  />;
 };
 
 export default MainContent;
