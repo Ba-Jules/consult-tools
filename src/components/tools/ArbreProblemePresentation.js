@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Play, X } from 'lucide-react';
 import { getToolConfig } from '../toolsRegistry/toolRegistry';
 
-const videoUrl = '/videos/arbre-probleme-presentation.mp4';
+const videoUrl = '/videos/Arbre-Problemes-presentation.mp4';
 
 const ArbreProblemePresentation = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
