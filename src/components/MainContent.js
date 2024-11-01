@@ -1,32 +1,52 @@
 import React from 'react';
-import ToolInterface from './ToolInterface';
-import { getToolConfig } from './toolsRegistry/toolRegistry';
+import SessionManager from './SessionManager';
 
-const MainContent = ({ selectedTool }) => {
-  if (!selectedTool) {
+const MainContent = ({ 
+    selectedTool, 
+    projectName, 
+    isSidebarCollapsed,
+    setIsSidebarCollapsed,
+    sessionInfo
+}) => {
+    // Log pour déboggage
+    console.log("MainContent - sessionInfo reçu:", sessionInfo);
+
+    // Vérification des props nécessaires
+    if (!sessionInfo) {
+        console.warn("MainContent: sessionInfo manquant");
+        return (
+            <div className="flex items-center justify-center h-full">
+                <div className="text-xl text-gray-600">
+                    Erreur: Configuration de session manquante
+                </div>
+            </div>
+        );
+    }
+
+    // Normalisation des données de session
+    const normalizedSessionInfo = {
+        projectName: projectName || 'Projet',
+        selectedTools: sessionInfo.selectedTools || [],
+        totalParticipants: parseInt(sessionInfo.totalParticipants) || 0,
+        participantsExpected: parseInt(sessionInfo.participantsExpected) || 0,
+        tables: parseInt(sessionInfo.tables) || 1,
+        participantsPerTable: parseInt(sessionInfo.participantsPerTable) || 0,
+        duration: sessionInfo.duration || { hours: 1, minutes: 0 },
+        remainingTime: parseInt(sessionInfo.remainingTime) || 60,
+        participants: sessionInfo.participants || [],
+        tdrFile: sessionInfo.tdrFile || null,
+        charterFile: sessionInfo.charterFile || null
+    };
+
     return (
-      <div className="p-8">
-        <h1 className="text-3xl">Sélectionnez un outil pour commencer.</h1>
-      </div>
+        <main className={`flex-1 transition-all duration-300 ${isSidebarCollapsed ? 'pl-16' : 'pl-64'}`}>
+            <SessionManager 
+                selectedTool={selectedTool}
+                projectName={projectName}
+                sessionInfo={normalizedSessionInfo}
+            />
+        </main>
     );
-  }
-
-  const toolConfig = getToolConfig(selectedTool);
-
-  if (!toolConfig) {
-    return (
-      <div className="p-8">
-        <h1 className="text-2xl">Outil non trouvé.</h1>
-      </div>
-    );
-  }
-
-  // Ne pas passer de children à ToolInterface
-  return <ToolInterface 
-    toolId={selectedTool} 
-    projectName="Mon Projet" 
-    moderatorName="Modérateur"
-  />;
 };
 
 export default MainContent;
