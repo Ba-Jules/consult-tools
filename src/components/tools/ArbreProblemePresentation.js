@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Play, X } from 'lucide-react';
+import { getToolConfig } from '../toolsRegistry/toolRegistry';
 
 const videoUrl = '/videos/arbre-probleme-presentation.mp4';
 

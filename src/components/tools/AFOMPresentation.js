@@ -4,8 +4,22 @@ import { ChevronLeft, ChevronRight, Play, X } from 'lucide-react';
 const afomVideoUrl = '/videos/afom-presentation.mp4';
 
 const AFOMPresentation = () => {
+  // États pour la gestion des slides et de la vidéo
   const [currentSlide, setCurrentSlide] = useState(0);
   const [showVideo, setShowVideo] = useState(false);
+
+  // Fonctions de navigation
+  const handleNextSlide = () => {
+    if (currentSlide < slides.length - 1) {
+      setCurrentSlide(prevSlide => prevSlide + 1);
+    }
+  };
+
+  const handlePrevSlide = () => {
+    if (currentSlide > 0) {
+      setCurrentSlide(prevSlide => prevSlide - 1);
+    }
+  };
 
   const slides = [
     {
@@ -38,14 +52,11 @@ const AFOMPresentation = () => {
       title: "Structure de l'AFOM",
       content: (
         <div className="flex flex-col h-[600px]">
-          {/* Container avec padding pour les étiquettes latérales */}
-          <div className="relative flex-1 flex flex-col mx-16"> {/* Ajout de mx-16 pour l'espace des étiquettes latérales */}
-            {/* Bandeau supérieur */}
+          <div className="relative flex-1 flex flex-col mx-16">
             <div className="text-center font-bold text-blue-800 bg-blue-50 py-2 w-full">
               Souhaité (positif)
             </div>
 
-            {/* Labels latéraux */}
             <div className="absolute left-0 top-1/2 transform -translate-x-16 -translate-y-1/2 -rotate-90 font-bold text-blue-800 bg-blue-50 px-4 py-2 origin-center w-32 text-center">
               Interne
             </div>
@@ -53,9 +64,7 @@ const AFOMPresentation = () => {
               Externe
             </div>
 
-            {/* Grille AFOM */}
             <div className="flex-1 grid grid-cols-2 gap-6 p-6">
-              {/* Acquis */}
               <div className="p-4 bg-green-50 rounded-lg border-2 border-green-200 shadow-md">
                 <h4 className="font-bold text-green-800 mb-4">A - Acquis</h4>
                 <ul className="space-y-2 text-gray-700">
@@ -67,7 +76,6 @@ const AFOMPresentation = () => {
                 </ul>
               </div>
 
-              {/* Opportunités */}
               <div className="p-4 bg-blue-50 rounded-lg border-2 border-blue-200 shadow-md">
                 <h4 className="font-bold text-blue-800 mb-4">O - Opportunités</h4>
                 <ul className="space-y-2 text-gray-700">
@@ -79,7 +87,6 @@ const AFOMPresentation = () => {
                 </ul>
               </div>
 
-              {/* Faiblesses */}
               <div className="p-4 bg-orange-50 rounded-lg border-2 border-orange-200 shadow-md">
                 <h4 className="font-bold text-orange-800 mb-4">F - Faiblesses</h4>
                 <ul className="space-y-2 text-gray-700">
@@ -91,7 +98,6 @@ const AFOMPresentation = () => {
                 </ul>
               </div>
 
-              {/* Menaces */}
               <div className="p-4 bg-red-50 rounded-lg border-2 border-red-200 shadow-md">
                 <h4 className="font-bold text-red-800 mb-4">M - Menaces</h4>
                 <ul className="space-y-2 text-gray-700">
@@ -104,7 +110,6 @@ const AFOMPresentation = () => {
               </div>
             </div>
 
-            {/* Bandeau inférieur */}
             <div className="text-center font-bold text-blue-800 bg-blue-50 py-2 w-full">
               Non souhaité (négatif)
             </div>
@@ -190,14 +195,16 @@ const AFOMPresentation = () => {
     }
   ];
 
+  // Vérification de sécurité pour le slide courant
+  const currentSlideData = slides[currentSlide] || slides[0];
+
   return (
     <div className="max-w-6xl mx-auto p-8">
       <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
         <div className="p-8">
-          {/* En-tête avec titre et bouton vidéo */}
           <div className="flex justify-between items-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900">
-              {slides[currentSlide].title}
+              {currentSlideData.title}
             </h2>
             <button
               className="inline-flex items-center px-6 py-3 border border-blue-300 rounded-lg text-sm font-medium text-blue-700 bg-white hover:bg-blue-50 transition-colors duration-200"
@@ -208,18 +215,16 @@ const AFOMPresentation = () => {
             </button>
           </div>
 
-          {/* Contenu du slide avec animation */}
           <div className="min-h-[600px] relative">
             <div className="transform transition-all duration-500 ease-in-out">
-              {slides[currentSlide].content}
+              {currentSlideData.content}
             </div>
           </div>
 
-          {/* Navigation */}
           <div className="flex justify-between items-center mt-12">
             <button
               className="inline-flex items-center px-6 py-3 border border-gray-300 rounded-lg text-sm font-medium bg-white disabled:text-gray-400 disabled:cursor-not-allowed enabled:text-gray-700 enabled:hover:bg-gray-50 transition-colors duration-200"
-              onClick={() => setCurrentSlide(current => current - 1)}
+              onClick={handlePrevSlide}
               disabled={currentSlide === 0}
             >
               <ChevronLeft className="w-5 h-5 mr-2" />
@@ -232,7 +237,7 @@ const AFOMPresentation = () => {
 
             <button
               className="inline-flex items-center px-6 py-3 border border-gray-300 rounded-lg text-sm font-medium bg-white disabled:text-gray-400 disabled:cursor-not-allowed enabled:text-gray-700 enabled:hover:bg-gray-50 transition-colors duration-200"
-              onClick={() => setCurrentSlide(current => current + 1)}
+              onClick={handleNextSlide}
               disabled={currentSlide === slides.length - 1}
             >
               Suivant

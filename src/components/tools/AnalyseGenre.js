@@ -1,6 +1,7 @@
 import React from 'react';
+import { getToolConfig } from '../toolsRegistry/toolRegistry';
 
-const AnalyseGenreContent = () => {
+const AnalyseGenre = () => {
   return (
     <div>
       <h2>Analyse Genre</h2>
@@ -9,4 +10,4 @@ const AnalyseGenreContent = () => {
   );
 };
 
-export default AnalyseGenreContent;
+export default AnalyseGenre;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Plus, Save, Edit, Trash2 } from 'lucide-react';
 import styled from '@emotion/styled';
+import { getToolConfig } from '../toolsRegistry/toolRegistry';
 
 // Styles pour les quadrants AFOM
 const AFOMQuadrant = styled.div`
