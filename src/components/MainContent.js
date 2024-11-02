@@ -1,5 +1,6 @@
 import React from 'react';
 import SessionManager from './SessionManager';
+import ParticipantAccess from './Participant/ParticipantAccess';
 
 const MainContent = ({ 
     selectedTool, 
@@ -39,12 +40,25 @@ const MainContent = ({
     };
 
     return (
-        <main className={`flex-1 transition-all duration-300 ${isSidebarCollapsed ? 'pl-16' : 'pl-64'}`}>
-            <SessionManager 
-                selectedTool={selectedTool}
-                projectName={projectName}
-                sessionInfo={normalizedSessionInfo}
-            />
+        <main className={`flex-1 p-4 transition-all duration-300 ${isSidebarCollapsed ? 'pl-16' : 'pl-64'}`}>
+            <div className="flex gap-4 h-full">
+                {/* Zone principale de l'outil */}
+                <div className="flex-1">
+                    <SessionManager 
+                        selectedTool={selectedTool}
+                        projectName={projectName}
+                        sessionInfo={normalizedSessionInfo}
+                    />
+                </div>
+                
+                {/* Zone des QR codes et liens */}
+                <div className="w-80 flex-shrink-0">
+                    <ParticipantAccess 
+                        sessionId={sessionInfo?.sessionId}
+                        selectedTools={normalizedSessionInfo.selectedTools}
+                    />
+                </div>
+            </div>
         </main>
     );
 };
