@@ -1,6 +1,6 @@
 import React from 'react';
 
-const CadreLogiqueContent = () => {
+const CadreLogique= () => {
   return (
     <div>
       <h2>Analyse Cadre Logique</h2>
@@ -9,4 +9,4 @@ const CadreLogiqueContent = () => {
   );
 };
 
-export default CadreLogiqueContent;
+export default CadreLogique;

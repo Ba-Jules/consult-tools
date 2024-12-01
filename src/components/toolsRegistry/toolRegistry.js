@@ -1,153 +1,159 @@
-import AFOM from '../tools/AFOM';
-import AFOMPresentation from '../tools/AFOMPresentation';
-import ArbreProbleme from '../tools/ArbreProbleme';
-import ArbreProblemePresentation from '../tools/ArbreProblemePresentation';
-import CadreLogique from '../tools/CadreLogique';
-import CadreLogiquePresentation from '../tools/CadreLogiquePresentation';
-import DiagrammeGantt from '../tools/DiagrammeGantt';
-import DiagrammeGanttPresentation from '../tools/DiagrammeGanttPresentation';
-import AnalyseParties from '../tools/AnalyseParties';
-import AnalysePartiesPresentation from '../tools/AnalysePartiesPresentation';
-import AnalyseGenre from '../tools/AnalyseGenre';
-import AnalyseGenrePresentation from '../tools/AnalyseGenrePresentation';
-import CarteMentale from '../tools/CarteMentale';
-import CarteMentalePresentation from '../tools/CarteMentalePresentation';
-import AnalyseMulticriteres from '../tools/AnalyseMulticriteres';
-import AnalyseMulticriteresPresentation from '../tools/AnalyseMulticriteresPresentation';
+import React from 'react';
 
+// Configuration complète des outils avec lazy loading
 const toolsConfig = {
-   'afom': { 
-       id: 'afom', 
-       name: 'AFOM', 
-       icon: '📊',
-       description: 'Analyse des Forces, Faiblesses, Opportunités et Menaces',
-       component: AFOM,
-       presentation: AFOMPresentation,
-       category: 'analyse',
-       tags: ['stratégie', 'diagnostic', 'planification']
-   },
-   'arbre-problemes': { 
-       id: 'arbre-problemes', 
-       name: 'Arbre à problèmes', 
-       icon: '🌳',
-       description: 'Visualisation hiérarchique des causes et conséquences',
-       component: ArbreProbleme,
-       presentation: ArbreProblemePresentation,
-       category: 'analyse',
-       tags: ['diagnostic', 'causalité', 'problématique']
-   },
-   'cadre-logique': { 
-       id: 'cadre-logique', 
-       name: 'Cadre logique', 
-       icon: '📋',
-       description: 'Structuration logique des objectifs et résultats',
-       component: CadreLogique,
-       presentation: CadreLogiquePresentation,
-       category: 'planification',
-       tags: ['objectifs', 'indicateurs', 'résultats']
-   },
-   'gantt': {
-       id: 'gantt',
-       name: 'Diagramme de Gantt',
-       icon: '📅', 
-       description: 'Planification temporelle des activités du projet',
-       component: DiagrammeGantt,
-       presentation: DiagrammeGanttPresentation,
-       category: 'planification',
-       tags: ['planning', 'temps', 'activités']
-   },
-   'parties-prenantes': {
-       id: 'parties-prenantes',
-       name: 'Analyse des parties prenantes',
-       icon: '👥',
-       description: 'Cartographie et analyse des acteurs du projet', 
-       component: AnalyseParties,
-       presentation: AnalysePartiesPresentation,
-       category: 'analyse',
-       tags: ['acteurs', 'stakeholders', 'partenaires']
-   },
-   'analyse-genre': {
-       id: 'analyse-genre',
-       name: 'Analyse genre',
-       icon: '⚖️',
-       description: 'Évaluation des aspects liés au genre dans le projet',
-       component: AnalyseGenre,
-       presentation: AnalyseGenrePresentation,
-       category: 'analyse',
-       tags: ['égalité', 'inclusion', 'social']
-   },
-   'carte-mentale': {
-       id: 'carte-mentale',
-       name: 'Carte mentale',
-       icon: '🧠',
-       description: 'Représentation visuelle des idées et concepts',
-       component: CarteMentale,
-       presentation: CarteMentalePresentation,
-       category: 'ideation',
-       tags: ['brainstorming', 'créativité', 'organisation']
-   },
-   'analyse-multicriteres': {
-       id: 'analyse-multicriteres',
-       name: 'Analyse multicritères',
-       icon: '🎯',
-       description: 'Évaluation comparative selon plusieurs critères',
-       component: AnalyseMulticriteres,
-       presentation: AnalyseMulticriteresPresentation,
-       category: 'decision',
-       tags: ['décision', 'évaluation', 'comparaison']
-   }
+    'afom': { 
+        id: 'afom', 
+        name: 'AFOM', 
+        icon: '📊',
+        description: 'Analyse des Forces, Faiblesses, Opportunités et Menaces',
+        component: React.lazy(() => import('../tools/AFOM')),
+        presentation: React.lazy(() => import('../tools/AFOMPresentation')),
+        category: 'analyse',
+        tags: ['stratégie', 'diagnostic', 'planification']
+    },
+    'arbre-problemes': { 
+        id: 'arbre-problemes', 
+        name: 'Arbre à problèmes', 
+        icon: '🌳',
+        description: 'Visualisation hiérarchique des causes et conséquences d\'un problème',
+        component: React.lazy(() => import('../tools/ArbreProbleme')),
+        presentation: React.lazy(() => import('../tools/ArbreProblemePresentation')),
+        category: 'analyse',
+        tags: ['diagnostic', 'causalité', 'problématique']
+    },
+    'cadre-logique': { 
+        id: 'cadre-logique', 
+        name: 'Cadre logique', 
+        icon: '📋',
+        description: 'Structuration logique des objectifs et résultats attendus',
+        component: React.lazy(() => import('../tools/CadreLogique')),
+        presentation: React.lazy(() => import('../tools/CadreLogiquePresentation')),
+        category: 'planification',
+        tags: ['objectifs', 'indicateurs', 'résultats']
+    },
+    'gantt': { 
+        id: 'gantt', 
+        name: 'Diagramme de Gantt', 
+        icon: '📅',
+        description: 'Planification temporelle des activités du projet',
+        component: React.lazy(() => import('../tools/DiagrammeGantt')),
+        presentation: React.lazy(() => import('../tools/DiagrammeGanttPresentation')),
+        category: 'planification',
+        tags: ['planning', 'temps', 'activités']
+    },
+    'parties-prenantes': { 
+        id: 'parties-prenantes', 
+        name: 'Analyse des parties prenantes', 
+        icon: '👥',
+        description: 'Cartographie et analyse des acteurs du projet',
+        component: React.lazy(() => import('../tools/AnalyseParties')),
+        presentation: React.lazy(() => import('../tools/AnalysePartiesPresentation')),
+        category: 'analyse',
+        tags: ['acteurs', 'stakeholders', 'partenaires']
+    },
+    'analyse-genre': { 
+        id: 'analyse-genre', 
+        name: 'Analyse genre', 
+        icon: '⚖️',
+        description: 'Évaluation des aspects liés au genre dans le projet',
+        component: React.lazy(() => import('../tools/AnalyseGenre')),
+        presentation: React.lazy(() => import('../tools/AnalyseGenrePresentation')),
+        category: 'analyse',
+        tags: ['égalité', 'inclusion', 'social']
+    },
+    'carte-mentale': { 
+        id: 'carte-mentale', 
+        name: 'Carte mentale', 
+        icon: '🧠',
+        description: 'Représentation visuelle des idées et concepts',
+        component: React.lazy(() => import('../tools/CarteMentale')),
+        presentation: React.lazy(() => import('../tools/CarteMentalePresentation')),
+        category: 'ideation',
+        tags: ['brainstorming', 'créativité', 'organisation']
+    },
+    'analyse-multicriteres': { 
+        id: 'analyse-multicriteres', 
+        name: 'Analyse multicritères', 
+        icon: '🎯',
+        description: 'Évaluation comparative selon plusieurs critères',
+        component: React.lazy(() => import('../tools/AnalyseMulticriteres')),
+        presentation: React.lazy(() => import('../tools/AnalyseMulticriteresPresentation')),
+        category: 'decision',
+        tags: ['décision', 'évaluation', 'comparaison']
+    }
 };
 
-export const getToolConfig = (toolId) => toolsConfig[toolId] || null;
+// Fonctions d'accès aux outils
+export const getToolConfig = (toolId) => {
+    return toolsConfig[toolId] || null;
+};
 
 export const getTools = () => Object.values(toolsConfig);
 
-export const getToolName = (toolId) => toolsConfig[toolId]?.name || 'Outil inconnu';
+// Fonction pour récupérer le nom d'un outil
+export const getToolName = (toolId) => {
+    return toolsConfig[toolId]?.name || 'Outil inconnu';
+};
 
-export const getToolsByCategory = (category) => 
-   Object.values(toolsConfig).filter(tool => tool.category === category);
+// Fonction pour obtenir les outils par catégorie
+export const getToolsByCategory = (category) => {
+    return Object.values(toolsConfig).filter(tool => tool.category === category);
+};
 
+// Fonction de recherche d'outils
 export const searchTools = (keyword) => {
-   const searchTerm = keyword.toLowerCase();
-   return Object.values(toolsConfig).filter(tool => 
-       tool.name.toLowerCase().includes(searchTerm) ||
-       tool.description.toLowerCase().includes(searchTerm) ||
-       tool.tags.some(tag => tag.toLowerCase().includes(searchTerm))
-   );
+    const searchTerm = keyword.toLowerCase();
+    return Object.values(toolsConfig).filter(tool => 
+        tool.name.toLowerCase().includes(searchTerm) ||
+        tool.description.toLowerCase().includes(searchTerm) ||
+        tool.tags.some(tag => tag.toLowerCase().includes(searchTerm))
+    );
 };
 
-export const getCategories = () => 
-   Array.from(new Set(Object.values(toolsConfig).map(tool => tool.category)));
+// Fonction pour obtenir toutes les catégories uniques
+export const getCategories = () => {
+    const categories = new Set(Object.values(toolsConfig).map(tool => tool.category));
+    return Array.from(categories);
+};
 
-export const getTags = () => 
-   Array.from(new Set(Object.values(toolsConfig).flatMap(tool => tool.tags)));
+// Fonction pour obtenir tous les tags uniques
+export const getTags = () => {
+    const tags = new Set(
+        Object.values(toolsConfig).flatMap(tool => tool.tags)
+    );
+    return Array.from(tags);
+};
 
-export const isToolAvailable = (toolId) => toolId in toolsConfig;
+// Fonction de vérification de disponibilité d'un outil
+export const isToolAvailable = (toolId) => {
+    return toolId in toolsConfig;
+};
 
+// Fonction pour le chargement asynchrone des outils (pour compatibilité)
 export const loadTool = async (toolId) => {
-   try {
-       const toolConfig = toolsConfig[toolId];
-       if (!toolConfig) {
-           throw new Error(`Outil ${toolId} non trouvé`);
-       }
-       return toolConfig.component;
-   } catch (error) {
-       console.error(`Erreur lors du chargement de l'outil ${toolId}:`, error);
-       return null;
-   }
+    const tool = toolsConfig[toolId];
+    if (!tool) return null;
+    try {
+        const component = await tool.component;
+        return component.default || component;
+    } catch (error) {
+        console.error(`Erreur lors du chargement de l'outil ${toolId}:`, error);
+        return null;
+    }
 };
 
+// Fonction pour le chargement asynchrone des présentations (pour compatibilité)
 export const loadToolPresentation = async (toolId) => {
-   try {
-       const toolConfig = toolsConfig[toolId];
-       if (!toolConfig) {
-           throw new Error(`Présentation de l'outil ${toolId} non trouvée`);
-       }
-       return toolConfig.presentation;
-   } catch (error) {
-       console.error(`Erreur lors du chargement de la présentation ${toolId}:`, error);
-       return null;
-   }
+    const tool = toolsConfig[toolId];
+    if (!tool) return null;
+    try {
+        const presentation = await tool.presentation;
+        return presentation.default || presentation;
+    } catch (error) {
+        console.error(`Erreur lors du chargement de la présentation ${toolId}:`, error);
+        return null;
+    }
 };
 
 export default toolsConfig;

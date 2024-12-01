@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AnalysePartiesContent = () => {
+const AnalyseParties = () => {
   return (
     <div>
       <h2>Analyse Parties prenantes</h2>
@@ -9,4 +9,4 @@ const AnalysePartiesContent = () => {
   );
 };
 
-export default AnalysePartiesContent;
+export default AnalyseParties;

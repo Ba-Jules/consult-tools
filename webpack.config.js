@@ -1,97 +1,79 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
+require('dotenv').config();
 
-module.exports = (env, argv) => {
-  const isProduction = argv.mode === 'production';
-
-  return {
+module.exports = {
     entry: './src/index.js',
     output: {
-      filename: '[name].[contenthash].js',
-      path: path.resolve(__dirname, 'dist'),
-      clean: true,
-      publicPath: isProduction ? '/new-collaborative-tools/' : '/',
+        path: path.resolve(__dirname, 'dist'),
+        filename: '[name].[contenthash].js',
+        publicPath: '/'
     },
-    cache: {
-      type: 'filesystem',
-      buildDependencies: {
-        config: [__filename],
-      },
-    },
-    devServer: {
-      static: {
-        directory: path.join(__dirname, 'public'),
-      },
-      compress: true,
-      port: 8083,
-      hot: true,
-      historyApiFallback: true, // Pour gérer les routes React
-      open: true,
-      allowedHosts: "all", // Autorise tous les hôtes (nécessaire pour Ngrok)
-    },
-    plugins: [
-      new HtmlWebpackPlugin({
-        template: './public/index.html',
-        //favicon: './public/favicon.ico', // Si vous avez un favicon
-      }),
-    ],
-    module: {
-      rules: [
-        {
-          test: /\.css$/,
-          use: [
-            'style-loader',
-            {
-              loader: 'css-loader',
-              options: {
-                importLoaders: 1,
-              },
-            },
-            'postcss-loader',
-          ],
-        },
-        {
-          test: /\.(js|jsx)$/,
-          exclude: /node_modules/,
-          use: {
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-env', '@babel/preset-react'],
-            },
-          },
-        },
-        {
-          test: /\.(png|jpe?g|gif|mp4|svg|ico)$/i,
-          type: 'asset/resource',
-          generator: {
-            filename: 'assets/[hash][ext][query]',
-          },
-        },
-        {
-          test: /\.(woff|woff2|eot|ttf|otf)$/i,
-          type: 'asset/resource',
-          generator: {
-            filename: 'fonts/[hash][ext][query]',
-          },
-        },
-      ],
-    },
+    
+    mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
+    devtool: process.env.NODE_ENV === 'production' ? 'source-map' : 'eval-source-map',
+
     resolve: {
-      extensions: ['.js', '.jsx', '.json'],
-      alias: {
-        '@': path.resolve(__dirname, 'src'),
-      },
+        extensions: ['.js', '.jsx'],
+        alias: {
+            '@': path.resolve(__dirname, 'src'),
+            '@components': path.resolve(__dirname, 'src/components')
+        }
     },
+
+    module: {
+        rules: [
+            {
+                test: /\.(js|jsx)$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env', '@babel/preset-react'],
+                        plugins: ['@babel/plugin-transform-runtime']
+                    }
+                }
+            },
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader', 'postcss-loader']
+            }
+        ]
+    },
+
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: './public/index.html',
+            filename: 'index.html'
+
+        })
+    ],
+
+    devServer: {
+        host: '0.0.0.0',
+        port: 3000,
+        historyApiFallback: true,
+        static: {
+            directory: path.join(__dirname, 'public')
+        },
+        proxy: {
+            '/api': {
+                target: process.env.API_URL || 'http://localhost:8083',
+                changeOrigin: true
+            }
+        }
+    },
+
     optimization: {
-      splitChunks: {
-        chunks: 'all',
-      },
-    },
-    performance: {
-      hints: false,
-    },
-    stats: {
-      errorDetails: true,
-    },
-  };
+        splitChunks: {
+            cacheGroups: {
+                vendor: {
+                    test: /[\\/]node_modules[\\/]/,
+                    name: 'vendors',
+                    chunks: 'all'
+                }
+            }
+        }
+    }
 };

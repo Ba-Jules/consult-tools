@@ -1,0 +1,2012 @@
+{
+  "session-1730927472181": {
+    "sessionId": "session-1730927472181",
+    "projectName": "rdfhgh",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 6,
+    "participantsExpected": 6,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-06T21:11:12.563Z"
+  },
+  "session-1730927820133": {
+    "sessionId": "session-1730927820133",
+    "projectName": "ghf",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 4,
+    "participantsExpected": 4,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-06T21:17:00.172Z"
+  },
+  "session-1730928001902": {
+    "sessionId": "session-1730928001902",
+    "projectName": "fghfh",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 7,
+    "participantsExpected": 7,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-06T21:20:01.931Z"
+  },
+  "session-1730928179854": {
+    "sessionId": "session-1730928179854",
+    "projectName": "fdg",
+    "selectedTools": [
+      "arbre-problemes",
+      "afom"
+    ],
+    "totalParticipants": 5,
+    "participantsExpected": 5,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-06T21:22:59.889Z"
+  },
+  "session-1731002798527": {
+    "sessionId": "session-1731002798527",
+    "projectName": "dsfg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-07T18:06:38.574Z"
+  },
+  "session-1731004366471": {
+    "sessionId": "session-1731004366471",
+    "projectName": "eret",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 5,
+    "participantsExpected": 5,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-07T18:32:46.509Z"
+  },
+  "session-1731004494160": {
+    "sessionId": "session-1731004494160",
+    "projectName": "dsfg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-07T18:34:54.197Z"
+  },
+  "session-1731004751968": {
+    "sessionId": "session-1731004751968",
+    "projectName": "fdgg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-07T18:39:12.311Z"
+  },
+  "session-1731004897407": {
+    "sessionId": "session-1731004897407",
+    "projectName": "esdrfg",
+    "selectedTools": [
+      "arbre-problemes",
+      "afom"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-07T18:41:37.444Z"
+  },
+  "session-1731005061512": {
+    "sessionId": "session-1731005061512",
+    "projectName": "gfhj",
+    "selectedTools": [
+      "arbre-problemes",
+      "afom"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-07T18:44:21.546Z"
+  },
+  "session-1731005138600": {
+    "sessionId": "session-1731005138600",
+    "projectName": "ghj",
+    "selectedTools": [
+      "arbre-problemes",
+      "afom"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-07T18:45:38.641Z"
+  },
+  "session-1731005623121": {
+    "sessionId": "session-1731005623121",
+    "projectName": "erty",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-07T18:53:43.158Z"
+  },
+  "session-1731006245809": {
+    "sessionId": "session-1731006245809",
+    "projectName": "dfg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-07T19:04:05.848Z"
+  },
+  "session-1731006515114": {
+    "sessionId": "session-1731006515114",
+    "projectName": "dfg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-07T19:08:35.153Z"
+  },
+  "session-1731007072858": {
+    "sessionId": "session-1731007072858",
+    "projectName": "df",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-07T19:17:52.896Z"
+  },
+  "session-1731007401747": {
+    "sessionId": "session-1731007401747",
+    "projectName": "sdfg",
+    "selectedTools": [
+      "arbre-problemes",
+      "afom"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-07T19:23:21.784Z"
+  },
+  "session-1731007771042": {
+    "sessionId": "session-1731007771042",
+    "projectName": "rt",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-07T19:29:31.079Z"
+  },
+  "session-1731008043123": {
+    "sessionId": "session-1731008043123",
+    "projectName": "ghf",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-07T19:34:03.163Z"
+  },
+  "session-1731008088179": {
+    "sessionId": "session-1731008088179",
+    "projectName": "dfg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-07T19:34:48.216Z"
+  },
+  "session-1731086831879": {
+    "sessionId": "session-1731086831879",
+    "projectName": "jkl",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 4,
+    "participantsExpected": 4,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-08T17:27:11.916Z"
+  },
+  "session-1731087456798": {
+    "sessionId": "session-1731087456798",
+    "projectName": "ghj",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-08T17:37:36.835Z"
+  },
+  "session-1731089492348": {
+    "sessionId": "session-1731089492348",
+    "projectName": "fgjk",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-08T18:11:32.393Z"
+  },
+  "session-1731089927844": {
+    "sessionId": "session-1731089927844",
+    "projectName": "qsdfgh",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-08T18:18:47.884Z"
+  },
+  "session-1731090283012": {
+    "sessionId": "session-1731090283012",
+    "projectName": "srdtf",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-08T18:24:43.047Z"
+  },
+  "session-1731090541307": {
+    "sessionId": "session-1731090541307",
+    "projectName": "wdfg",
+    "selectedTools": [
+      "arbre-problemes",
+      "afom"
+    ],
+    "totalParticipants": 4,
+    "participantsExpected": 4,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-08T18:29:01.347Z"
+  },
+  "session-1731090666179": {
+    "sessionId": "session-1731090666179",
+    "projectName": "wwd",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 4,
+    "participantsExpected": 4,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-08T18:31:06.218Z"
+  },
+  "session-1731090922611": {
+    "sessionId": "session-1731090922611",
+    "projectName": "qsdf",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-08T18:35:22.647Z"
+  },
+  "session-1731091089242": {
+    "sessionId": "session-1731091089242",
+    "projectName": "wdfxcgvgb",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-08T18:38:09.279Z"
+  },
+  "session-1731154977010": {
+    "sessionId": "session-1731154977010",
+    "projectName": "dfg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 9,
+    "participantsExpected": 9,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T12:22:57.052Z"
+  },
+  "session-1731165074735": {
+    "sessionId": "session-1731165074735",
+    "projectName": "rtyt",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T15:11:14.777Z"
+  },
+  "session-1731165671064": {
+    "sessionId": "session-1731165671064",
+    "projectName": "ty",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T15:21:11.101Z"
+  },
+  "session-1731165712775": {
+    "sessionId": "session-1731165712775",
+    "projectName": "sdfgfh",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 4,
+    "participantsExpected": 4,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T15:21:53.168Z"
+  },
+  "session-1731166226736": {
+    "sessionId": "session-1731166226736",
+    "projectName": "fgfhj",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T15:30:26.771Z"
+  },
+  "session-1731166495791": {
+    "sessionId": "session-1731166495791",
+    "projectName": "rtrhytr",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T15:34:55.832Z"
+  },
+  "session-1731166719624": {
+    "sessionId": "session-1731166719624",
+    "projectName": "dsfgg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T15:38:39.662Z"
+  },
+  "session-1731166800976": {
+    "sessionId": "session-1731166800976",
+    "projectName": "gfh",
+    "selectedTools": [
+      "afom"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T15:40:01.017Z"
+  },
+  "session-1731169049090": {
+    "sessionId": "session-1731169049090",
+    "projectName": "sdff",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T16:17:29.131Z"
+  },
+  "session-1731169297889": {
+    "sessionId": "session-1731169297889",
+    "projectName": "dsfqdf",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T16:21:37.931Z"
+  },
+  "session-1731170182667": {
+    "sessionId": "session-1731170182667",
+    "projectName": "fdg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T16:36:22.708Z"
+  },
+  "session-1731170597123": {
+    "sessionId": "session-1731170597123",
+    "projectName": "gfds",
+    "selectedTools": [
+      "afom"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T16:43:17.162Z"
+  },
+  "session-1731170799475": {
+    "sessionId": "session-1731170799475",
+    "projectName": "cbgnb",
+    "selectedTools": [
+      "afom"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T16:46:39.512Z"
+  },
+  "session-1731171892436": {
+    "sessionId": "session-1731171892436",
+    "projectName": "dfgh",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T17:04:52.478Z"
+  },
+  "session-1731172089948": {
+    "sessionId": "session-1731172089948",
+    "projectName": "dfgh",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T17:08:09.984Z"
+  },
+  "session-1731184395901": {
+    "sessionId": "session-1731184395901",
+    "projectName": "gfderfd",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 4,
+    "participantsExpected": 4,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T20:33:15.943Z"
+  },
+  "session-1731184566125": {
+    "sessionId": "session-1731184566125",
+    "projectName": "cvb",
+    "selectedTools": [
+      "afom"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T20:36:06.164Z"
+  },
+  "session-1731184707397": {
+    "sessionId": "session-1731184707397",
+    "projectName": "dfsg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T20:38:27.437Z"
+  },
+  "session-1731184816205": {
+    "sessionId": "session-1731184816205",
+    "projectName": "gdhg",
+    "selectedTools": [
+      "afom"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T20:40:16.251Z"
+  },
+  "session-1731184956133": {
+    "sessionId": "session-1731184956133",
+    "projectName": "tyhg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T20:42:36.174Z"
+  },
+  "session-1731185070918": {
+    "sessionId": "session-1731185070918",
+    "projectName": "vbv",
+    "selectedTools": [
+      "afom"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T20:44:30.959Z"
+  },
+  "session-1731185155918": {
+    "sessionId": "session-1731185155918",
+    "projectName": "fdg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T20:45:55.960Z"
+  },
+  "session-1731185248062": {
+    "sessionId": "session-1731185248062",
+    "projectName": "gh",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T20:47:28.099Z"
+  },
+  "session-1731185427493": {
+    "sessionId": "session-1731185427493",
+    "projectName": "sdqff",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T20:50:27.535Z"
+  },
+  "session-1731185819574": {
+    "sessionId": "session-1731185819574",
+    "projectName": "gff",
+    "selectedTools": [
+      "afom"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T20:56:59.616Z"
+  },
+  "session-1731185948206": {
+    "sessionId": "session-1731185948206",
+    "projectName": "vnb",
+    "selectedTools": [
+      "afom"
+    ],
+    "totalParticipants": 1,
+    "participantsExpected": 1,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T20:59:08.243Z"
+  },
+  "session-1731186095551": {
+    "sessionId": "session-1731186095551",
+    "projectName": "fdghf",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T21:01:35.592Z"
+  },
+  "session-1731186350407": {
+    "sessionId": "session-1731186350407",
+    "projectName": "dghgf",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T21:05:50.451Z"
+  },
+  "session-1731186533119": {
+    "sessionId": "session-1731186533119",
+    "projectName": "fsf",
+    "selectedTools": [
+      "afom"
+    ],
+    "totalParticipants": 1,
+    "participantsExpected": 1,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T21:08:53.163Z"
+  },
+  "session-1731186689535": {
+    "sessionId": "session-1731186689535",
+    "projectName": "r",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 1,
+    "participantsExpected": 1,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T21:11:29.575Z"
+  },
+  "session-1731186836471": {
+    "sessionId": "session-1731186836471",
+    "projectName": "fdgsf",
+    "selectedTools": [
+      "afom"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T21:13:56.811Z"
+  },
+  "session-1731186971351": {
+    "sessionId": "session-1731186971351",
+    "projectName": "fgsdfg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-09T21:16:11.389Z"
+  },
+  "session-1731239528096": {
+    "sessionId": "session-1731239528096",
+    "projectName": "dfsg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 4,
+    "participantsExpected": 4,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T11:52:08.137Z"
+  },
+  "session-1731240143344": {
+    "sessionId": "session-1731240143344",
+    "projectName": "ghjk",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T12:02:23.385Z"
+  },
+  "session-1731240346192": {
+    "sessionId": "session-1731240346192",
+    "projectName": "dfgh",
+    "selectedTools": [
+      "afom"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T12:05:46.233Z"
+  },
+  "session-1731240666552": {
+    "sessionId": "session-1731240666552",
+    "projectName": "fsqdfq",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T12:11:06.593Z"
+  },
+  "session-1731241732599": {
+    "sessionId": "session-1731241732599",
+    "projectName": "ghk",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T12:28:52.641Z"
+  },
+  "session-1731241779408": {
+    "sessionId": "session-1731241779408",
+    "projectName": "fghj",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T12:29:39.443Z"
+  },
+  "session-1731241934463": {
+    "sessionId": "session-1731241934463",
+    "projectName": "dfghj",
+    "selectedTools": [
+      "afom"
+    ],
+    "totalParticipants": 1,
+    "participantsExpected": 1,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T12:32:14.872Z"
+  },
+  "session-1731242357759": {
+    "sessionId": "session-1731242357759",
+    "projectName": "ghjk",
+    "selectedTools": [
+      "afom"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T12:39:17.801Z"
+  },
+  "session-1731242859159": {
+    "sessionId": "session-1731242859159",
+    "projectName": "cvbn,",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T12:47:39.196Z"
+  },
+  "session-1731255302450": {
+    "sessionId": "session-1731255302450",
+    "projectName": "dfsgdg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T16:15:02.487Z"
+  },
+  "session-1731255339938": {
+    "sessionId": "session-1731255339938",
+    "projectName": "dfsgfh",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T16:15:39.974Z"
+  },
+  "session-1731257282138": {
+    "sessionId": "session-1731257282138",
+    "projectName": "fg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T16:48:02.174Z"
+  },
+  "session-1731257522570": {
+    "sessionId": "session-1731257522570",
+    "projectName": "fgh",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T16:52:02.611Z"
+  },
+  "session-1731258705913": {
+    "sessionId": "session-1731258705913",
+    "projectName": "fdgdfgf",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T17:11:45.953Z"
+  },
+  "session-1731258751818": {
+    "sessionId": "session-1731258751818",
+    "projectName": "fqsfd",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T17:12:31.853Z"
+  },
+  "session-1731259236410": {
+    "sessionId": "session-1731259236410",
+    "projectName": "sgfdfsgd",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T17:20:36.446Z"
+  },
+  "session-1731259315258": {
+    "sessionId": "session-1731259315258",
+    "projectName": "gsdghsg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T17:21:55.298Z"
+  },
+  "session-1731259685362": {
+    "sessionId": "session-1731259685362",
+    "projectName": "sdretg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T17:28:05.399Z"
+  },
+  "session-1731260397921": {
+    "sessionId": "session-1731260397921",
+    "projectName": "fd",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T17:39:57.957Z"
+  },
+  "session-1731261095226": {
+    "sessionId": "session-1731261095226",
+    "projectName": "fdsgf",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T17:51:35.611Z"
+  },
+  "session-1731261785441": {
+    "sessionId": "session-1731261785441",
+    "projectName": "fbgfbh",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T18:03:05.478Z"
+  },
+  "session-1731261869609": {
+    "sessionId": "session-1731261869609",
+    "projectName": "dfsggf",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T18:04:29.651Z"
+  },
+  "session-1731263521904": {
+    "sessionId": "session-1731263521904",
+    "projectName": "gsdfg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T18:32:01.948Z"
+  },
+  "session-1731266054480": {
+    "sessionId": "session-1731266054480",
+    "projectName": "ghg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T19:14:14.522Z"
+  },
+  "session-1731266308216": {
+    "sessionId": "session-1731266308216",
+    "projectName": "dfsgfds",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T19:18:28.259Z"
+  },
+  "session-1731267978688": {
+    "sessionId": "session-1731267978688",
+    "projectName": "gfg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": [],
+    "createdAt": "2024-11-10T19:46:18.730Z"
+  },
+  "session-1731268584680": {
+    "sessionId": "session-1731268584680",
+    "projectName": "gfdg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731268752104": {
+    "sessionId": "session-1731268752104",
+    "projectName": "gfth",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731268853784": {
+    "sessionId": "session-1731268853784",
+    "projectName": "gdfg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731270029535": {
+    "sessionId": "session-1731270029535",
+    "projectName": "hgfh",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731270999056": {
+    "sessionId": "session-1731270999056",
+    "projectName": "tgry",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731271065400": {
+    "sessionId": "session-1731271065400",
+    "projectName": "dfgsg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731271598800": {
+    "sessionId": "session-1731271598800",
+    "projectName": "rt ert",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731272008039": {
+    "sessionId": "session-1731272008039",
+    "projectName": "fdfgs",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731272197631": {
+    "sessionId": "session-1731272197631",
+    "projectName": "fdsgf",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731272309847": {
+    "sessionId": "session-1731272309847",
+    "projectName": "qfds",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731272422711": {
+    "sessionId": "session-1731272422711",
+    "projectName": "ghj",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731272492559": {
+    "sessionId": "session-1731272492559",
+    "projectName": "dsfdfsg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731272768175": {
+    "sessionId": "session-1731272768175",
+    "projectName": "fhjghjk",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731273053568": {
+    "sessionId": "session-1731273053568",
+    "projectName": "fggh",
+    "selectedTools": [
+      "afom"
+    ],
+    "totalParticipants": 1,
+    "participantsExpected": 1,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731275301160": {
+    "sessionId": "session-1731275301160",
+    "projectName": "jkjkl",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731276199055": {
+    "sessionId": "session-1731276199055",
+    "projectName": "gfhjk",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731276881975": {
+    "sessionId": "session-1731276881975",
+    "projectName": "hjk",
+    "selectedTools": [
+      "arbre-problemes",
+      "afom"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731277253990": {
+    "sessionId": "session-1731277253990",
+    "projectName": "fgdfg",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 1,
+    "participantsExpected": 1,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731337156422": {
+    "sessionId": "session-1731337156422",
+    "projectName": "kol",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731337730733": {
+    "sessionId": "session-1731337730733",
+    "projectName": "efrser",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 2,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731337884293": {
+    "sessionId": "session-1731337884293",
+    "projectName": "tikuky",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731348637177": {
+    "sessionId": "session-1731348637177",
+    "projectName": "dsqfr",
+    "selectedTools": [
+      "arbre-problemes",
+      "afom"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731349614592": {
+    "sessionId": "session-1731349614592",
+    "projectName": "defds",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731349682952": {
+    "sessionId": "session-1731349682952",
+    "projectName": "dfdsfs",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 2,
+    "participantsExpected": 2,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731350466670": {
+    "sessionId": "session-1731350466670",
+    "projectName": "fdsf",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731350559815": {
+    "sessionId": "session-1731350559815",
+    "projectName": "sdfdfsf",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731765990633": {
+    "sessionId": "session-1731765990633",
+    "projectName": "fdsgf",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  },
+  "session-1731776172835": {
+    "sessionId": "session-1731776172835",
+    "projectName": "gdsgd",
+    "selectedTools": [
+      "afom",
+      "arbre-problemes"
+    ],
+    "totalParticipants": 3,
+    "participantsExpected": 3,
+    "tables": 1,
+    "duration": {
+      "hours": 1,
+      "minutes": 0
+    },
+    "remainingTime": 60,
+    "participants": []
+  }
+}

@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Search } from 'lucide-react';
+import { getToolConfig } from './toolsRegistry/toolRegistry'
 
 const Sidebar = ({ selectedTool, onSelectTool, tools }) => {
   const [isCollapsed, setIsCollapsed] = useState(false);

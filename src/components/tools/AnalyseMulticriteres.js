@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AnalyseMulticriteresContent = () => {
+const AnalyseMulticriteres = () => {
   return (
     <div>
       <h2>Analyse Multicritères</h2>
@@ -9,4 +9,4 @@ const AnalyseMulticriteresContent = () => {
   );
 };
 
-export default AnalyseMulticriteresContent;
+export default AnalyseMulticriteres;

@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, Play, X } from 'lucide-react';
-import { getToolConfig } from '../toolsRegistry/toolRegistry';
 
 const videoUrl = '/videos/Arbre-Problemes-presentation.mp4';
+const arbreProblemeImage = '/videos/arbre_probleme.JPG'; // Remplacez avec le chemin correct
+const exempleArboricultureImage = '/videos/arbre_objectifs_exemple.JPG'; // Remplacez avec le chemin correct
 
 const ArbreProblemePresentation = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -18,75 +19,51 @@ const ArbreProblemePresentation = () => {
           </h3>
           <div className="grid grid-cols-2 gap-8">
             <div className="p-6 bg-gradient-to-br from-blue-50 to-white rounded-lg shadow-md">
-              <h4 className="text-xl font-bold text-blue-800 mb-4">Structure Verticale</h4>
+              <h4 className="text-xl font-bold text-blue-800 mb-4">Structure Arborescente</h4>
               <p className="text-gray-700 leading-relaxed">
-                L'arbre à problèmes organise l'analyse selon une logique verticale : 
-                les causes à la base, le problème central au milieu, et les conséquences au sommet.
+                L'arbre à problèmes est organisé de manière hiérarchique : le problème central constitue le tronc,
+                les causes sont représentées par les racines en bas, et les conséquences par les branches en haut.
               </p>
             </div>
             <div className="p-6 bg-gradient-to-br from-blue-50 to-white rounded-lg shadow-md">
-              <h4 className="text-xl font-bold text-blue-800 mb-4">Double Perspective</h4>
+              <h4 className="text-xl font-bold text-blue-800 mb-4">Analyse descendante et transformation</h4>
               <p className="text-gray-700 leading-relaxed">
-                Chaque arbre à problèmes peut être converti en arbre à solutions, 
-                transformant les situations négatives en objectifs positifs à atteindre.
+                On part du problème central pour identifier les causes et les conséquences. Ensuite, l'arbre à
+                problèmes peut être transformé en arbre à objectifs, où chaque problème est converti en solution.
               </p>
             </div>
           </div>
         </div>
-      )
+      ),
     },
     {
-      title: "Structure de l'Arbre",
+      title: "Structure de l'Arbre à Problèmes",
       content: (
-        <div className="relative h-[600px] p-4 bg-gradient-to-b from-blue-50/30 to-white">
-          {/* En-têtes des sections */}
-          <div className="absolute top-0 w-full text-center font-bold text-blue-800 bg-green-100/80 py-2 rounded-t-lg">
-            Conséquences
+        <div className="space-y-8">
+          <div className="flex justify-center mb-8">
+            <img
+              src={arbreProblemeImage}
+              alt="Structure de l'Arbre à Problèmes"
+              className="max-w-full h-auto rounded-lg shadow-md"
+            />
           </div>
-          
-          {/* Arbre à problèmes */}
-          <div className="flex flex-col items-center space-y-6 pt-12 pb-4 px-8">
-            {/* Conséquences */}
-            <div className="grid grid-cols-3 gap-4 w-full">
-              {[1,2,3].map(i => (
-                <div key={`cons-${i}`} className="p-3 bg-green-100 rounded-lg border-2 border-green-200 shadow-md text-center min-h-[60px] flex items-center justify-center">
-                  <p className="text-sm text-gray-600">Conséquence {i}</p>
-                </div>
-              ))}
-            </div>
-            
-            {/* Flèches de liaison */}
-            <div className="w-full flex justify-center">
-              <div className="border-l-2 border-gray-400 h-8"></div>
-            </div>
-
-            {/* Problème central */}
-            <div className="w-2/3 p-4 bg-orange-100 rounded-lg border-2 border-orange-200 shadow-lg text-center">
-              <h4 className="font-bold text-orange-800">Problème Central</h4>
-              <p className="text-sm text-gray-600 mt-2">Situation négative principale à résoudre</p>
-            </div>
-
-            {/* Flèches de liaison */}
-            <div className="w-full flex justify-center">
-              <div className="border-l-2 border-gray-400 h-8"></div>
-            </div>
-
-            {/* Causes */}
-            <div className="grid grid-cols-3 gap-4 w-full">
-              {[1,2,3].map(i => (
-                <div key={`cause-${i}`} className="p-3 bg-yellow-100 rounded-lg border-2 border-yellow-200 shadow-md text-center min-h-[60px] flex items-center justify-center">
-                  <p className="text-sm text-gray-600">Cause {i}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Label inférieur */}
-          <div className="absolute bottom-0 w-full text-center font-bold text-blue-800 bg-yellow-100/80 py-2 rounded-b-lg">
-            Causes
+          <div className="text-lg leading-relaxed text-gray-700 space-y-4">
+            <p className="text-center font-semibold text-blue-800">
+              Comprendre la structure arborescente
+            </p>
+            <p>
+              Dans cet exemple, le <span className="font-bold text-orange-700">problème central</span> est représenté
+              par le tronc de l'arbre, soutenu par les <span className="font-bold text-yellow-700">causes</span> (racines)
+              en bas, et menant à des <span className="font-bold text-green-700">conséquences</span> (branches) en haut.
+              Cette structure permet une visualisation claire des relations de cause à effet.
+            </p>
+            <p>
+              Chaque cause et chaque conséquence peut être explorée pour des sous-niveaux, permettant une analyse
+              approfondie et structurée des facteurs qui alimentent le problème central.
+            </p>
           </div>
         </div>
-      )
+      ),
     },
     {
       title: "Méthodologie d'Analyse",
@@ -94,95 +71,60 @@ const ArbreProblemePresentation = () => {
         <div className="space-y-8">
           <div className="grid grid-cols-2 gap-12">
             <div className="p-8 bg-gradient-to-r from-blue-50 to-white rounded-lg shadow-lg">
-              <h4 className="text-2xl font-bold text-blue-800 mb-6">Analyse Descendante</h4>
-              <div className="space-y-4">
-                <div className="p-4 bg-white rounded-lg border border-blue-200 shadow-sm">
-                  <h5 className="font-bold text-green-800 mb-2">1. Identifier les Conséquences</h5>
-                  <p className="text-gray-700">Repérer les effets directs et indirects du problème central</p>
-                </div>
-                <div className="p-4 bg-white rounded-lg border border-blue-200 shadow-sm">
-                  <h5 className="font-bold text-orange-800 mb-2">2. Formuler le Problème Central</h5>
-                  <p className="text-gray-700">Définir clairement la situation négative principale</p>
-                </div>
-                <div className="p-4 bg-white rounded-lg border border-blue-200 shadow-sm">
-                  <h5 className="font-bold text-yellow-800 mb-2">3. Analyser les Causes</h5>
-                  <p className="text-gray-700">Explorer les racines du problème de manière systématique</p>
-                </div>
-              </div>
+              <h4 className="text-2xl font-bold text-blue-800 mb-6">Analyse des Causes et Conséquences</h4>
+              <p className="text-gray-700 leading-relaxed">
+                En partant du bas, explorez les causes du problème. Remontez ensuite pour identifier les conséquences.
+                Ce processus systématique permet de définir clairement les causes racines et d’envisager des solutions
+                pour chaque aspect identifié.
+              </p>
             </div>
             <div className="p-8 bg-gradient-to-r from-blue-50 to-white rounded-lg shadow-lg">
-              <h4 className="text-2xl font-bold text-blue-800 mb-6">Transformation en Solutions</h4>
-              <div className="space-y-4">
-                <div className="p-4 bg-white rounded-lg border border-blue-200 shadow-sm">
-                  <h5 className="font-bold text-green-800 mb-2">1. Objectifs Supérieurs</h5>
-                  <p className="text-gray-700">Transformer les conséquences en impacts positifs visés</p>
-                </div>
-                <div className="p-4 bg-white rounded-lg border border-blue-200 shadow-sm">
-                  <h5 className="font-bold text-orange-800 mb-2">2. Objectif Central</h5>
-                  <p className="text-gray-700">Convertir le problème en situation désirée</p>
-                </div>
-                <div className="p-4 bg-white rounded-lg border border-blue-200 shadow-sm">
-                  <h5 className="font-bold text-yellow-800 mb-2">3. Actions Stratégiques</h5>
-                  <p className="text-gray-700">Définir les interventions pour traiter chaque cause</p>
-                </div>
-              </div>
+              <h4 className="text-2xl font-bold text-blue-800 mb-6">Transformation en Arbre à Objectifs</h4>
+              <p className="text-gray-700 leading-relaxed">
+                Lors de la transformation en arbre à objectifs, chaque problème est remplacé par une solution réalisable
+                et logique. L'arbre à objectifs n’a pas besoin d’être une copie parfaite de l’arbre à problèmes.
+              </p>
             </div>
           </div>
         </div>
-      )
+      ),
     },
     {
-      title: "Exemple Pratique",
+      title: "Exemple Pratique: Arboriculture",
       content: (
         <div className="space-y-8">
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <h4 className="text-2xl font-bold text-blue-800 mb-6 text-center">Cas d'étude : Arboriculture</h4>
-            <div className="grid grid-cols-2 gap-8">
-              <div className="space-y-4">
-                <div className="p-4 bg-green-50 rounded-lg border border-green-200">
-                  <h5 className="font-bold text-green-800 mb-2">Impacts Visés</h5>
-                  <ul className="list-disc pl-4 text-gray-700 space-y-2">
-                    <li>Augmentation des revenus</li>
-                    <li>Amélioration de la qualité</li>
-                    <li>Développement durable</li>
-                  </ul>
-                </div>
-                <div className="p-4 bg-orange-50 rounded-lg border border-orange-200">
-                  <h5 className="font-bold text-orange-800 mb-2">Solution Centrale</h5>
-                  <p className="text-gray-700">Pratique arboricole améliorée</p>
-                </div>
-                <div className="p-4 bg-yellow-50 rounded-lg border border-yellow-200">
-                  <h5 className="font-bold text-yellow-800 mb-2">Actions Clés</h5>
-                  <ul className="list-disc pl-4 text-gray-700 space-y-2">
-                    <li>Formation technique</li>
-                    <li>Partenariats stratégiques</li>
-                    <li>Innovation des pratiques</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="flex items-center justify-center">
-                <img
-                  src="/api/placeholder/400/400"
-                  alt="Exemple d'arbre à problèmes/solutions"
-                  className="max-w-full h-auto rounded-lg shadow-md"
-                />
-              </div>
-            </div>
+          <h4 className="text-2xl font-bold text-blue-800 text-center">Étude de Cas: Arboriculture</h4>
+          <div className="flex justify-center mb-8">
+            <img
+              src={exempleArboricultureImage}
+              alt="Exemple d'arbre à problèmes et solutions pour l'arboriculture"
+              className="max-w-full h-auto rounded-lg shadow-md"
+            />
+          </div>
+          <div className="text-lg leading-relaxed text-gray-700 space-y-4">
+            <p>
+              Cet exemple montre comment un arbre à problèmes spécifique (l'arboriculture) est structuré, avec des
+              <span className="font-bold text-yellow-700">causes</span> identifiées en bas et des
+              <span className="font-bold text-green-700">conséquences</span> en haut. En passant à l’arbre à objectifs,
+              chaque problème est remplacé par une action concrète visant à améliorer la pratique arboricole.
+            </p>
+            <p>
+              <span className="font-semibold text-blue-800">Astuce :</span> Pour passer efficacement d'un arbre à
+              problèmes à un arbre à objectifs, veillez à formuler chaque cause sous forme d'objectif souhaitable,
+              réalisable et logique.
+            </p>
           </div>
         </div>
-      )
-    }
+      ),
+    },
   ];
 
   return (
     <div className="max-w-6xl mx-auto p-8">
       <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
         <div className="p-8">
-          {/* En-tête avec titre et bouton vidéo */}
           <div className="flex justify-between items-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900">
-              {slides[currentSlide].title}
-            </h2>
+            <h2 className="text-4xl font-bold text-gray-900">{slides[currentSlide].title}</h2>
             <button
               className="inline-flex items-center px-6 py-3 border border-blue-300 rounded-lg text-sm font-medium text-blue-700 bg-white hover:bg-blue-50 transition-colors duration-200"
               onClick={() => setShowVideo(true)}
@@ -192,14 +134,12 @@ const ArbreProblemePresentation = () => {
             </button>
           </div>
 
-          {/* Contenu du slide avec animation */}
           <div className="min-h-[600px] relative">
             <div className="transform transition-all duration-500 ease-in-out">
               {slides[currentSlide].content}
             </div>
           </div>
 
-          {/* Navigation */}
           <div className="flex justify-between items-center mt-12">
             <button
               className="inline-flex items-center px-6 py-3 border border-gray-300 rounded-lg text-sm font-medium bg-white disabled:text-gray-400 disabled:cursor-not-allowed enabled:text-gray-700 enabled:hover:bg-gray-50 transition-colors duration-200"
@@ -210,9 +150,7 @@ const ArbreProblemePresentation = () => {
               Précédent
             </button>
 
-            <span className="text-sm font-medium text-gray-500">
-              {currentSlide + 1} / {slides.length}
-            </span>
+            <span className="text-sm font-medium text-gray-500">{currentSlide + 1} / {slides.length}</span>
 
             <button
               className="inline-flex items-center px-6 py-3 border border-gray-300 rounded-lg text-sm font-medium bg-white disabled:text-gray-400 disabled:cursor-not-allowed enabled:text-gray-700 enabled:hover:bg-gray-50 transition-colors duration-200"
@@ -226,7 +164,6 @@ const ArbreProblemePresentation = () => {
         </div>
       </div>
 
-      {/* Modal Vidéo */}
       {showVideo && (
         <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50">
           <div className="bg-white rounded-xl overflow-hidden w-full max-w-4xl relative">
@@ -238,11 +175,7 @@ const ArbreProblemePresentation = () => {
             </button>
             <div className="p-6">
               <div className="aspect-video bg-gray-100 rounded-lg overflow-hidden">
-                <video
-                  className="w-full h-full"
-                  controls
-                  autoPlay
-                >
+                <video className="w-full h-full" controls autoPlay>
                   <source src={videoUrl} type="video/mp4" />
                   Votre navigateur ne supporte pas la lecture de vidéos.
                 </video>

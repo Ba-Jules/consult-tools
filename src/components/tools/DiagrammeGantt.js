@@ -1,6 +1,6 @@
 import React from 'react';
 
-const DiagrammeGanttContent = () => {
+const DiagrammeGantt = () => {
   return (
     <div>
       <h2>Analyse Diagramme de Gantt</h2>
@@ -9,4 +9,4 @@ const DiagrammeGanttContent = () => {
   );
 };
 
-export default DiagrammeGanttContent;
+export default DiagrammeGantt;

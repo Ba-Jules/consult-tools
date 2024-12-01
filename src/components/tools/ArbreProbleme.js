@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Plus, Save, Edit, Trash2, ArrowDown } from 'lucide-react';
 import styled from '@emotion/styled';
+import { getToolConfig } from '../toolsRegistry/toolRegistry';
 
 // Styles des composants
 const TreeContainer = styled.div`
